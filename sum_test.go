@@ -27,7 +27,7 @@ func (b buf) Generate(r *rand.Rand, _ int) reflect.Value {
 	return reflect.ValueOf(ls)
 }
 
-func TestSum32(t *testing.T) {
+func TestSum(t *testing.T) {
 	rand.Seed(time.Now().Unix())
 
 	tests := []struct {
